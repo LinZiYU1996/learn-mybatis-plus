@@ -1,0 +1,77 @@
+package com.lin.cruddemo.entity;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+/**
+ * <p>
+ * 
+ * </p>
+ *
+ * @author Lin
+ * @since 2020-07-05
+ */
+@TableName("adddress")
+@NoArgsConstructor
+@AllArgsConstructor
+public class Adddress extends Model<Adddress> {
+
+    private static final long serialVersionUID=1L;
+
+    public Adddress(String location, Integer age) {
+        this.location = location;
+        this.age = age;
+    }
+
+    @TableId(value="id",type= IdType.AUTO)
+    private Integer id;
+
+    private String location;
+
+    private Integer age;
+
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    @Override
+    protected Serializable pkVal() {
+        return this.id;
+    }
+
+    @Override
+    public String toString() {
+        return "Adddress{" +
+        "id=" + id +
+        ", location=" + location +
+        ", age=" + age +
+        "}";
+    }
+}
