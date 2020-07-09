@@ -1,11 +1,5 @@
 
 
-
-server:
-  port: 9936
-
-
-
 spring:
   # 配置数据源
   datasource:
@@ -22,14 +16,6 @@ spring:
 mybatis-plus:
   type-aliases-package:
   mapper-locations:  classpath:/mapper/*.xml
-
-
-
-
-
-
-
-
 
 
 
