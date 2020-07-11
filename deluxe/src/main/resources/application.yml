@@ -1,15 +1,11 @@
 
 
 
-server:
-  port: 9936
-
-
 
 spring:
   # 配置数据源
   datasource:
-    url: jdbc:mysql://127.0.0.1:3307/t?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3307/t78?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai
 
 
     # MySQL在高版本需要指明是否进行SSL连接 解决则加上 &useSSL=false
@@ -22,12 +18,6 @@ spring:
 mybatis-plus:
   type-aliases-package:
   mapper-locations:  classpath:/mapper/*.xml
-
-
-
-
-
-
 
 
 

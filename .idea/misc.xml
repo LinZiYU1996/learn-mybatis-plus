@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/crud-demo/pom.xml" />
         <option value="$PROJECT_DIR$/generator-demo/pom.xml" />
         <option value="$PROJECT_DIR$/wrapper-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/auto_fill_metainfo/pom.xml" />
+        <option value="$PROJECT_DIR$/deluxe/pom.xml" />
       </list>
     </option>
   </component>

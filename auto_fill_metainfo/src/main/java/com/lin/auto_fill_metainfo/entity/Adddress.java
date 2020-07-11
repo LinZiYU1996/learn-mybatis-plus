@@ -1,4 +1,4 @@
-package com.lin.cruddemo.entity;
+package com.lin.auto_fill_metainfo.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -37,9 +37,6 @@ public class Adddress extends Model<Adddress> {
     private Integer age;
 
 
-
-
-
     public Integer getId() {
         return id;
     }
@@ -66,7 +63,7 @@ public class Adddress extends Model<Adddress> {
 
     @Override
     protected Serializable pkVal() {
-        return id;
+        return this.id;
     }
 
     @Override

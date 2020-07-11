@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="generator-demo" />
+        <module name="auto_fill_metainfo" />
+        <module name="deluxe" />
         <module name="wrapper-demo" />
         <module name="crud-demo" />
       </profile>
@@ -14,7 +16,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auto_fill_metainfo" options="-parameters" />
       <module name="crud-demo" options="-parameters" />
+      <module name="deluxe" options="-parameters" />
       <module name="generator-demo" options="-parameters" />
       <module name="wrapper-demo" options="-parameters" />
     </option>
