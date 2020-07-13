@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="enum_demo" />
+        <module name="execution_analysis" />
         <module name="crud-demo" />
         <module name="generator-demo" />
         <module name="deluxe" />
@@ -20,6 +22,9 @@
       <module name="auto_fill_metainfo" options="-parameters" />
       <module name="crud-demo" options="-parameters" />
       <module name="deluxe" options="-parameters" />
+      <module name="dynamic_tablename_demo" options="-parameters" />
+      <module name="enum_demo" options="-parameters" />
+      <module name="execution_analysis" options="-parameters" />
       <module name="generator-demo" options="-parameters" />
       <module name="wrapper-demo" options="-parameters" />
     </option>

@@ -1,15 +1,16 @@
-package com.lin.dynamic_tablename_demo;
+package com.lin.enum_demo;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.lin.dynamic_tablename_demo.mapper")
-public class DynamicTablenameDemoApplication {
+
+@MapperScan("com.lin.enum_demo.mapper")
+public class EnumDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DynamicTablenameDemoApplication.class, args);
+        SpringApplication.run(EnumDemoApplication.class, args);
     }
 
 }

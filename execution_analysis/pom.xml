@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.lin</groupId>
-    <artifactId>dynamic_tablename_demo</artifactId>
+    <artifactId>execution_analysis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>dynamic_tablename_demo</name>
+    <name>execution_analysis</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -25,7 +25,6 @@
         </dependency>
 
     </dependencies>
-
 
 
     <build>
