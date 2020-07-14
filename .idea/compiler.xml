@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="enum_demo" />
-        <module name="execution_analysis" />
         <module name="crud-demo" />
+        <module name="id_generator" />
         <module name="generator-demo" />
         <module name="deluxe" />
-        <module name="wrapper-demo" />
         <module name="dynamic_tablename_demo" />
+        <module name="logic_delete" />
+        <module name="wrapper-demo" />
+        <module name="execution_analysis" />
         <module name="auto_fill_metainfo" />
       </profile>
     </annotationProcessing>
@@ -26,6 +28,8 @@
       <module name="enum_demo" options="-parameters" />
       <module name="execution_analysis" options="-parameters" />
       <module name="generator-demo" options="-parameters" />
+      <module name="id_generator" options="-parameters" />
+      <module name="logic_delete" options="-parameters" />
       <module name="wrapper-demo" options="-parameters" />
     </option>
   </component>

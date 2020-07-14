@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/dynamic_tablename_demo/pom.xml" />
         <option value="$PROJECT_DIR$/enum_demo/pom.xml" />
         <option value="$PROJECT_DIR$/execution_analysis/pom.xml" />
+        <option value="$PROJECT_DIR$/id_generator/pom.xml" />
+        <option value="$PROJECT_DIR$/logic_delete/pom.xml" />
       </list>
     </option>
   </component>
