@@ -15,6 +15,9 @@
         <option value="$PROJECT_DIR$/execution_analysis/pom.xml" />
         <option value="$PROJECT_DIR$/id_generator/pom.xml" />
         <option value="$PROJECT_DIR$/logic_delete/pom.xml" />
+        <option value="$PROJECT_DIR$/optimistic_locker/pom.xml" />
+        <option value="$PROJECT_DIR$/pagehelper_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pagination_demo/pom.xml" />
       </list>
     </option>
   </component>

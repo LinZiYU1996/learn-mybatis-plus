@@ -1,6 +1,6 @@
 package com.test.generator.service;
 
-import com.test.generator.entity.User;
+import com.test.generator.entity.User1;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author Lin
- * @since 2020-07-13
+ * @since 2020-07-14
  */
-public interface IUserService extends IService<User> {
+public interface IUser1Service extends IService<User1> {
 
 }
