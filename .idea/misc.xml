@@ -18,6 +18,8 @@
         <option value="$PROJECT_DIR$/optimistic_locker/pom.xml" />
         <option value="$PROJECT_DIR$/pagehelper_demo/pom.xml" />
         <option value="$PROJECT_DIR$/pagination_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/performance_analysis/pom.xml" />
+        <option value="$PROJECT_DIR$/resultmap_demo/pom.xml" />
       </list>
     </option>
   </component>

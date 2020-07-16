@@ -6,19 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dynamic_tablename_demo" />
+        <module name="id_generator" />
+        <module name="crud-demo" />
+        <module name="pagination_demo" />
         <module name="enum_demo" />
         <module name="optimistic_locker" />
-        <module name="execution_analysis" />
-        <module name="crud-demo" />
-        <module name="id_generator" />
-        <module name="pagination_demo" />
-        <module name="generator-demo" />
         <module name="deluxe" />
-        <module name="logic_delete" />
-        <module name="wrapper-demo" />
-        <module name="pagehelper_demo" />
-        <module name="dynamic_tablename_demo" />
         <module name="auto_fill_metainfo" />
+        <module name="execution_analysis" />
+        <module name="logic_delete" />
+        <module name="performance_analysis" />
+        <module name="wrapper-demo" />
+        <module name="resultmap_demo" />
+        <module name="pagehelper_demo" />
+        <module name="generator-demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -36,6 +38,8 @@
       <module name="optimistic_locker" options="-parameters" />
       <module name="pagehelper_demo" options="-parameters" />
       <module name="pagination_demo" options="-parameters" />
+      <module name="performance_analysis" options="-parameters" />
+      <module name="resultmap_demo" options="-parameters" />
       <module name="wrapper-demo" options="-parameters" />
     </option>
   </component>
