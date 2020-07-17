@@ -16,6 +16,7 @@
         <module name="auto_fill_metainfo" />
         <module name="execution_analysis" />
         <module name="logic_delete" />
+        <module name="sequence_demo" />
         <module name="performance_analysis" />
         <module name="wrapper-demo" />
         <module name="resultmap_demo" />
@@ -40,6 +41,7 @@
       <module name="pagination_demo" options="-parameters" />
       <module name="performance_analysis" options="-parameters" />
       <module name="resultmap_demo" options="-parameters" />
+      <module name="sequence_demo" options="-parameters" />
       <module name="wrapper-demo" options="-parameters" />
     </option>
   </component>
