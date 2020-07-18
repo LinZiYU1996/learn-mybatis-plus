@@ -15,13 +15,14 @@
         <module name="deluxe" />
         <module name="auto_fill_metainfo" />
         <module name="execution_analysis" />
-        <module name="logic_delete" />
         <module name="sequence_demo" />
         <module name="performance_analysis" />
         <module name="wrapper-demo" />
         <module name="resultmap_demo" />
-        <module name="pagehelper_demo" />
+        <module name="dynamic_datasource_jar_demo" />
+        <module name="logic_delete" />
         <module name="generator-demo" />
+        <module name="pagehelper_demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -30,6 +31,7 @@
       <module name="auto_fill_metainfo" options="-parameters" />
       <module name="crud-demo" options="-parameters" />
       <module name="deluxe" options="-parameters" />
+      <module name="dynamic_datasource_jar_demo" options="-parameters" />
       <module name="dynamic_tablename_demo" options="-parameters" />
       <module name="enum_demo" options="-parameters" />
       <module name="execution_analysis" options="-parameters" />

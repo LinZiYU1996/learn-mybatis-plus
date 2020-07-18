@@ -97,7 +97,7 @@ public class MybatisPlusGenerator {
                         .setDriverName("com.mysql.jdbc.Driver")
                         .setUsername("root")
 //                        .setPassword("123456")
-                        .setUrl("jdbc:mysql://127.0.0.1:3307/t714?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai")
+                        .setUrl("jdbc:mysql://127.0.0.1:3307/master717?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai")
         ).setStrategy(
                 // 策略配置
                 new StrategyConfig()
@@ -105,7 +105,7 @@ public class MybatisPlusGenerator {
                         // .setDbColumnUnderline(true)//全局下划线命名
 //                        .setTablePrefix(new String[]{"my_"})// 此处可以修改为您的表前缀
                         .setNaming(NamingStrategy.underline_to_camel)// 表名生成策略
-                        .setInclude(new String[] { "user1","children1"}) // 需要生成的表
+                        .setInclude(new String[] { "user"}) // 需要生成的表
                         // .setExclude(new String[]{"test"}) // 排除生成的表
                         // 自定义实体父类
                         // .setSuperEntityClass("com.baomidou.demo.TestEntity")

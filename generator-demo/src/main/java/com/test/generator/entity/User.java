@@ -1,6 +1,8 @@
 package com.test.generator.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 
 /**
@@ -9,33 +11,23 @@ import java.io.Serializable;
  * </p>
  *
  * @author Lin
- * @since 2020-07-14
+ * @since 2020-07-17
  */
-public class Children1 extends Model<Children1> {
+public class User extends Model<User> {
 
     private static final long serialVersionUID=1L;
 
-    /**
-     * 主键ID
-     */
-      private Long id;
+      @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
-    /**
-     * 姓名
-     */
     private String name;
 
-    /**
-     * 上级ID
-     */
-    private Long userId;
 
-
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -47,14 +39,6 @@ public class Children1 extends Model<Children1> {
         this.name = name;
     }
 
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
     @Override
     protected Serializable pkVal() {
         return this.id;
@@ -62,10 +46,9 @@ public class Children1 extends Model<Children1> {
 
     @Override
     public String toString() {
-        return "Children1{" +
+        return "User{" +
         "id=" + id +
         ", name=" + name +
-        ", userId=" + userId +
         "}";
     }
 }

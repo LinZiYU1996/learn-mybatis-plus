@@ -1,0 +1,25 @@
+##mybatisPlus配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  global-config:
+    db-config:
+      id-type: input
+##动态数据源配置
+
+spring:
+  datasource:
+    dynamic:
+      primary: master  # 配置默认数据源
+      datasource:
+        master:
+          username: root
+          password: root
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3307/master717?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+        slave1:
+          username: root
+          password: root
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3307/slave717?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+
+
