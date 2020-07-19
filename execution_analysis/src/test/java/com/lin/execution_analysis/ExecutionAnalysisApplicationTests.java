@@ -19,7 +19,7 @@ class ExecutionAnalysisApplicationTests {
 
     @Test
     public void t1() {
-        studentMapper.insert(new Student(1L,"test",12));
+        studentMapper.insert(new Student(1L, "test", 12));
 
     }
 

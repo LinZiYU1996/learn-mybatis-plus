@@ -23,7 +23,7 @@ class CrudDemoApplicationTests {
     public void t1() {
 
         for (int i = 0; i < 50; i++) {
-            Adddress adddress = new Adddress("a"+i, i+100);
+            Adddress adddress = new Adddress("a" + i, i + 100);
             mapper.insert(adddress);
         }
 

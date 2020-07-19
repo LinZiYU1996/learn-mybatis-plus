@@ -21,7 +21,7 @@ class DynamicTablenameDemoApplicationTests {
         for (int i = 0; i < 10; i++) {
             U1 u = new U1();
 
-            u.setName(i+"  a ");
+            u.setName(i + "  a ");
             u.insert();
         }
 
@@ -34,7 +34,7 @@ class DynamicTablenameDemoApplicationTests {
         for (int i = 0; i < 10; i++) {
             U2 u = new U2();
 
-            u.setName(i+"  a ");
+            u.setName(i + "  a ");
             u.insert();
         }
 
@@ -46,7 +46,7 @@ class DynamicTablenameDemoApplicationTests {
 
     @Test
     public void t3() {
-        for (int i = 0; i < 6 ; i++) {
+        for (int i = 0; i < 6; i++) {
             U1 user = u1Mapper.selectById(1);
             System.err.println(user.getName());
         }

@@ -5,7 +5,7 @@ import com.lin.dynamic_tablename_demo.entity.U1;
 
 /**
  * <p>
- *  Mapper 接口
+ * Mapper 接口
  * </p>
  *
  * @author Lin

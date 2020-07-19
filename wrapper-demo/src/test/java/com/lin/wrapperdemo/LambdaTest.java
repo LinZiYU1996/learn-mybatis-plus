@@ -32,7 +32,7 @@ public class LambdaTest {
         QueryWrapper<Dataset> queryWrapper = new QueryWrapper<>();
 
         queryWrapper.lambda()
-                .eq(Dataset::getBench,"good");
+                .eq(Dataset::getBench, "good");
 
         List<Dataset> datasets = mapper.selectList(queryWrapper);
 
@@ -55,7 +55,6 @@ public class LambdaTest {
         for (Dataset dataset : datasets) {
             log.info(dataset.toString());
         }
-
 
 
     }

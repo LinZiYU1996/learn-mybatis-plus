@@ -105,7 +105,7 @@ public class MybatisPlusGenerator {
                         // .setDbColumnUnderline(true)//全局下划线命名
 //                        .setTablePrefix(new String[]{"my_"})// 此处可以修改为您的表前缀
                         .setNaming(NamingStrategy.underline_to_camel)// 表名生成策略
-                        .setInclude(new String[] { "user"}) // 需要生成的表
+                        .setInclude(new String[]{"user"}) // 需要生成的表
                         // .setExclude(new String[]{"test"}) // 排除生成的表
                         // 自定义实体父类
                         // .setSuperEntityClass("com.baomidou.demo.TestEntity")
@@ -176,7 +176,6 @@ public class MybatisPlusGenerator {
         // 打印注入设置，这里演示模板里面怎么获取注入内容【可无】
         System.err.println(mpg.getCfg().getMap().get("abc"));
     }
-
 
 
 }

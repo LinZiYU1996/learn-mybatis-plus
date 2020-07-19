@@ -14,10 +14,10 @@ import org.springframework.boot.test.context.SpringBootTest;
  * \* Date: 2020/7/10
  * \* Time: 9:08
  * \* Description:
- *
+ * <p>
  * Active Record 演示
- *
- *
+ * <p>
+ * <p>
  * \
  */
 
@@ -28,9 +28,9 @@ public class ActiveRecordTest {
 
     /**
      * ActiveRecord模式：只要实体类继承一个类，并重写获取主键的值的方法，就可以使用实例对象去调用简单的增删改查方法
-     *
+     * <p>
      * Active Record 是一种数据访问设计模式，它可以帮助你实现数据对象Object到关系数据库的映射。
-     *
+     * <p>
      * 应用Active Record 时，每一个类的实例对象唯一对应一个数据库表的一行(一对一关系)。你只需继承一个abstract Active Record 类就可以使用该设计模式访问数据库，其最大的好处是使用非常简单。
      */
 
@@ -67,7 +67,6 @@ public class ActiveRecordTest {
         adddress.updateById();
 
     }
-
 
 
 }

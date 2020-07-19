@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Lin
@@ -22,14 +22,14 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Adddress extends Model<Adddress> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     public Adddress(String location, Integer age) {
         this.location = location;
         this.age = age;
     }
 
-    @TableId(value="id",type= IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     private String location;
@@ -69,9 +69,9 @@ public class Adddress extends Model<Adddress> {
     @Override
     public String toString() {
         return "Adddress{" +
-        "id=" + id +
-        ", location=" + location +
-        ", age=" + age +
-        "}";
+                "id=" + id +
+                ", location=" + location +
+                ", age=" + age +
+                "}";
     }
 }

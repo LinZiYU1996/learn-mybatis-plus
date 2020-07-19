@@ -18,7 +18,7 @@ class PerformanceAnalysisApplicationTests {
     private StudentMapper studentMapper;
 
     @Test
-    public void test(){
+    public void test() {
         studentMapper.selectList(new QueryWrapper<>());
     }
 

@@ -5,7 +5,7 @@ import com.lin.id_generator.entity.User;
 
 /**
  * <p>
- *  Mapper 接口
+ * Mapper 接口
  * </p>
  *
  * @author Lin

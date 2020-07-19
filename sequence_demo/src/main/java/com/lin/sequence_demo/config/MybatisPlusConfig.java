@@ -18,10 +18,11 @@ public class MybatisPlusConfig {
     /**
      * sequence主键，需要配置一个主键生成器
      * 配合实体类注解 {@link KeySequence} + {@link TableId} type=INPUT
+     *
      * @return
      */
     @Bean
-    public H2KeyGenerator h2KeyGenerator(){
+    public H2KeyGenerator h2KeyGenerator() {
         return new H2KeyGenerator();
     }
 

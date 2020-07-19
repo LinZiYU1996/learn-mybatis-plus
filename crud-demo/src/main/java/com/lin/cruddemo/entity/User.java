@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Lin
@@ -16,9 +16,9 @@ import java.io.Serializable;
  */
 public class User extends Model<User> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     private String name;
@@ -63,9 +63,9 @@ public class User extends Model<User> {
     @Override
     public String toString() {
         return "User{" +
-        "id=" + id +
-        ", name=" + name +
-        ", pwd=" + pwd +
-        "}";
+                "id=" + id +
+                ", name=" + name +
+                ", pwd=" + pwd +
+                "}";
     }
 }

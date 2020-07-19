@@ -36,6 +36,7 @@ class PagehelperDemoApplicationTests {
         }
 
     }
+
     @Test
     void testIn() {
         List<Long> ids = Arrays.asList(1L, 2L);

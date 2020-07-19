@@ -5,7 +5,7 @@ import com.lin.id_generator.entity.User;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author Lin

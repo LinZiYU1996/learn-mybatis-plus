@@ -3,11 +3,12 @@ package com.lin.dynamic_tablename_demo.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Lin
@@ -15,9 +16,9 @@ import java.io.Serializable;
  */
 public class U1 extends Model<U1> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     private String name;
@@ -47,8 +48,8 @@ public class U1 extends Model<U1> {
     @Override
     public String toString() {
         return "U1{" +
-        "id=" + id +
-        ", name=" + name +
-        "}";
+                "id=" + id +
+                ", name=" + name +
+                "}";
     }
 }

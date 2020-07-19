@@ -22,7 +22,7 @@ import java.util.List;
 public class MybatisPlusConfig {
 
     @Bean
-    public SqlExplainInterceptor sqlExplainInterceptor(){
+    public SqlExplainInterceptor sqlExplainInterceptor() {
         SqlExplainInterceptor sqlExplainInterceptor = new SqlExplainInterceptor();
         List<ISqlParser> sqlParserList = new ArrayList<>();
         sqlParserList.add(new BlockAttackSqlParser());

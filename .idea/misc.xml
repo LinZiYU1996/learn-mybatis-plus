@@ -4,7 +4,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/crud-demo/pom.xml" />
         <option value="$PROJECT_DIR$/generator-demo/pom.xml" />
         <option value="$PROJECT_DIR$/wrapper-demo/pom.xml" />
@@ -22,6 +21,7 @@
         <option value="$PROJECT_DIR$/resultmap_demo/pom.xml" />
         <option value="$PROJECT_DIR$/sequence_demo/pom.xml" />
         <option value="$PROJECT_DIR$/dynamic_datasource_jar_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/aop_datasource/pom.xml" />
       </list>
     </option>
   </component>

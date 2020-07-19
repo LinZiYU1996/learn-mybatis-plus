@@ -28,20 +28,18 @@ import java.util.Random;
 public class DataSetTest {
 
 
-
     @Autowired
     private DatasetMapper datasetMapper;
 
     private static String[] benchs =
             {
-              "good",
-              "bad"
+                    "good",
+                    "bad"
             };
 
     private static String gene() {
         return benchs[new Random().nextInt(benchs.length)];
     }
-
 
 
     @Test
@@ -53,30 +51,30 @@ public class DataSetTest {
 
     /**
      * 使用了最新的java8的java.time类，并提供了LocalDateTime和java.util.Date之间的转换。
-     *
+     * <p>
      * 使用方法：
-     *
+     * <p>
      * randomLocalDateTime(-3,3) ： 取距离今天前后2天的日期。如果今天为7月12日，则日期随机范围为7月10日~7月14日
-     *
+     * <p>
      * 测试方法 ：
      */
     @Test
-    public void testRandomDateTime(){
-        for(int i=0;i<10;i++){
-            System.out.println(randomLocalDateTime(-30,30));
+    public void testRandomDateTime() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(randomLocalDateTime(-30, 30));
         }
     }
 
-    private static Date randomDate(String beginDate,String endDate){
+    private static Date randomDate(String beginDate, String endDate) {
         try {
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
             Date start = format.parse(beginDate);
             Date end = format.parse(endDate);
 
-            if(start.getTime() >= end.getTime()){
+            if (start.getTime() >= end.getTime()) {
                 return null;
             }
-            long date = random(start.getTime(),end.getTime());
+            long date = random(start.getTime(), end.getTime());
             return new Date(date);
         } catch (Exception e) {
             e.printStackTrace();
@@ -84,10 +82,10 @@ public class DataSetTest {
         return null;
     }
 
-    private static long random(long begin,long end){
-        long rtn = begin + (long)(Math.random() * (end - begin));
-        if(rtn == begin || rtn == end){
-            return random(begin,end);
+    private static long random(long begin, long end) {
+        long rtn = begin + (long) (Math.random() * (end - begin));
+        if (rtn == begin || rtn == end) {
+            return random(begin, end);
         }
         return rtn;
     }
@@ -95,28 +93,29 @@ public class DataSetTest {
 
     /**
      * 取范围日期的随机日期时间,不含边界
+     *
      * @param startDay
      * @param endDay
      * @return
      */
-    public LocalDateTime randomLocalDateTime(int startDay,int endDay){
+    public LocalDateTime randomLocalDateTime(int startDay, int endDay) {
 
         int plusMinus = 1;
-        if(startDay < 0 && endDay > 0){
-            plusMinus = Math.random()>0.5?1:-1;
-            if(plusMinus>0){
+        if (startDay < 0 && endDay > 0) {
+            plusMinus = Math.random() > 0.5 ? 1 : -1;
+            if (plusMinus > 0) {
                 startDay = 0;
-            }else{
+            } else {
                 endDay = Math.abs(startDay);
                 startDay = 0;
             }
-        }else if(startDay < 0 && endDay < 0){
+        } else if (startDay < 0 && endDay < 0) {
             plusMinus = -1;
 
             //两个数交换
             startDay = startDay + endDay;
-            endDay  = startDay - endDay;
-            startDay = startDay -endDay;
+            endDay = startDay - endDay;
+            startDay = startDay - endDay;
 
             //取绝对值
             startDay = Math.abs(startDay);
@@ -124,22 +123,23 @@ public class DataSetTest {
 
         }
 
-        LocalDate day = LocalDate.now().plusDays(plusMinus * RandomUtils.nextInt(startDay,endDay));
-        int hour = RandomUtils.nextInt(1,24);
-        int minute = RandomUtils.nextInt(0,60);
-        int second = RandomUtils.nextInt(0,60);
+        LocalDate day = LocalDate.now().plusDays(plusMinus * RandomUtils.nextInt(startDay, endDay));
+        int hour = RandomUtils.nextInt(1, 24);
+        int minute = RandomUtils.nextInt(0, 60);
+        int second = RandomUtils.nextInt(0, 60);
         LocalTime time = LocalTime.of(hour, minute, second);
         return LocalDateTime.of(day, time);
     }
 
     /**
      * 取范围日期的随机日期时间,不含边界
+     *
      * @param startDay
      * @param endDay
      * @return
      */
-    public Date randomDateTime(int startDay,int endDay){
-        LocalDateTime ldt = randomLocalDateTime(startDay,endDay);
+    public Date randomDateTime(int startDay, int endDay) {
+        LocalDateTime ldt = randomLocalDateTime(startDay, endDay);
         ZonedDateTime zdt = ldt.atZone(ZoneId.systemDefault());
         return Date.from(zdt.toInstant());
     }
@@ -153,7 +153,7 @@ public class DataSetTest {
             String label = RandomStringUtils.randomAlphabetic(6);
             int age = random.nextInt(90);
             String bench = gene();
-            LocalDateTime time = randomLocalDateTime(-30,30);
+            LocalDateTime time = randomLocalDateTime(-30, 30);
 
             Dataset dataset = new Dataset();
 

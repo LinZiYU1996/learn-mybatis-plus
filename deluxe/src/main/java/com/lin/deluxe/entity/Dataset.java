@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Lin
@@ -22,9 +22,9 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class Dataset extends Model<Dataset> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     private String label;
@@ -88,11 +88,11 @@ public class Dataset extends Model<Dataset> {
     @Override
     public String toString() {
         return "Dataset{" +
-        "id=" + id +
-        ", label=" + label +
-        ", age=" + age +
-        ", time=" + time +
-        ", bench=" + bench +
-        "}";
+                "id=" + id +
+                ", label=" + label +
+                ", age=" + age +
+                ", time=" + time +
+                ", bench=" + bench +
+                "}";
     }
 }

@@ -34,6 +34,7 @@ public class ConditionTest {
 
     @Autowired
     private DatasetMapper mapper;
+
     /**
      * <p>
      * 根据 entity 条件，查询一条记录,
@@ -43,12 +44,12 @@ public class ConditionTest {
     @Test
     public void test1() {
 
-        User user =  new User();
+        User user = new User();
 
         user.setId(1);
 
         QueryWrapper<User> qryWrapper = new QueryWrapper<>();
-        qryWrapper.eq("id",1);
+        qryWrapper.eq("id", 1);
 
         User us = userMapper.selectOne(qryWrapper);
         log.info(us.toString());
@@ -59,7 +60,6 @@ public class ConditionTest {
      * <p>
      * 根据 Wrapper 条件，查询总记录数
      * </p>
-     *
      */
 
     @Test
@@ -74,26 +74,24 @@ public class ConditionTest {
 
     /**
      * allEq
-     *allEq(Map<R, V> params)
+     * allEq(Map<R, V> params)
      * allEq(Map<R, V> params, boolean null2IsNull)
      * allEq(boolean condition, Map<R, V> params, boolean null2IsNull)
-     *
-     *全部eq(或个别isNull)
+     * <p>
+     * 全部eq(或个别isNull)
      * 个别参数说明:
-     *
+     * <p>
      * params : key为数据库字段名,value为字段值
      * null2IsNull : 为true则在map的value为null时调用 isNull 方法,为false时则忽略value为null的
-     *
+     * <p>
      * 例1: allEq({id:1,name:"老王",age:null})--->id = 1 and name = '老王' and age is null
      * 例2: allEq({id:1,name:"老王",age:null}, false)--->id = 1 and name = '老王'
-     *
-     *
      */
 
     @Test
     public void test5() {
-        Map<String,Object> m1 = new HashMap<>();
-        Map<String,String> m2 = new HashMap<>();
+        Map<String, Object> m1 = new HashMap<>();
+        Map<String, String> m2 = new HashMap<>();
 
         m1.put("age", 25);
         m1.put("bench", "good");
@@ -112,16 +110,15 @@ public class ConditionTest {
         // : Dataset{id=101, label=UDEAir, age=25, time=2020-07-09T14:03:53, bench=good}
 
 
-
     }
 
 
     /**
      * ne
-     *
+     * <p>
      * ne(R column, Object val)
      * ne(boolean condition, R column, Object val)
-     *不等于 <>
+     * 不等于 <>
      * 例: ne("name", "老王")--->name <> '老王'
      */
     @Test
@@ -142,12 +139,11 @@ public class ConditionTest {
 
     /**
      * gt
-     *gt(R column, Object val)
+     * gt(R column, Object val)
      * gt(boolean condition, R column, Object val)
-     *
-     *大于 >
+     * <p>
+     * 大于 >
      * 例: gt("age", 18)--->age > 18
-     *
      */
 
 
@@ -228,10 +224,7 @@ public class ConditionTest {
         }
 
 
-
     }
-
-
 
 
 }

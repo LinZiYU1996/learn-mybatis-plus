@@ -5,7 +5,7 @@ import com.lin.deluxe.entity.User;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author Lin

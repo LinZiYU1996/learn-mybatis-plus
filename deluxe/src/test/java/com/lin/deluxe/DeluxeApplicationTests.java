@@ -22,7 +22,6 @@ class DeluxeApplicationTests {
      * 根据MybatisPlus 的 DefaultSqlInjector 和 AbstractMethod 可以自定义各种你想要的 sql ,注入到全局中，相
      * 当于自定义 Mybatisplus 自动注入的方法。之前需要在 xml 中进行配置的 SQL 语句，现在通过扩展 DefaultSqlInjector
      *  和 AbstractMethod在加载 mybatis 环境时就注入。
-     *
      */
     @Autowired
     private DatasetMapper datasetMapper;

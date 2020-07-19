@@ -22,11 +22,9 @@ class DynamicDatasourceJarDemoApplicationTests {
     public void t1() {
 
 
-            User u = User.builder().name("asa").build();
+        User u = User.builder().name("asa").build();
 
-            service.insertBySlave1(u);
-
-
+        service.insertBySlave1(u);
 
 
     }

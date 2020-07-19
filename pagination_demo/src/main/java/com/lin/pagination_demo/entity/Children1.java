@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Lin
@@ -14,12 +14,12 @@ import java.io.Serializable;
  */
 public class Children1 extends Model<Children1> {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     /**
      * 主键ID
      */
-      private Long id;
+    private Long id;
 
     /**
      * 姓名
@@ -64,9 +64,9 @@ public class Children1 extends Model<Children1> {
     @Override
     public String toString() {
         return "Children1{" +
-        "id=" + id +
-        ", name=" + name +
-        ", userId=" + userId +
-        "}";
+                "id=" + id +
+                ", name=" + name +
+                ", userId=" + userId +
+                "}";
     }
 }

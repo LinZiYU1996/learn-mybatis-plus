@@ -5,7 +5,7 @@ import com.lin.pagination_demo.entity.User1;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author Lin

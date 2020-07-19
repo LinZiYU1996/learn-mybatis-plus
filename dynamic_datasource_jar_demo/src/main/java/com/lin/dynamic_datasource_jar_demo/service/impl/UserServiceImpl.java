@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author Lin
@@ -23,6 +23,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 
     @Autowired
     private UserMapper userMapper;
+
     @Override
     public void insertBySlave1(User user) {
         userMapper.insert(user);

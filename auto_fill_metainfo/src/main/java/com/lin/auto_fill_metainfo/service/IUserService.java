@@ -5,7 +5,7 @@ import com.lin.auto_fill_metainfo.entity.User;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author Lin

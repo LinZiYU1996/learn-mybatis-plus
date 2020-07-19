@@ -15,8 +15,6 @@
     </parent>
 
 
-
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -30,7 +28,6 @@
 
 
     </dependencies>
-
 
 
     <build>

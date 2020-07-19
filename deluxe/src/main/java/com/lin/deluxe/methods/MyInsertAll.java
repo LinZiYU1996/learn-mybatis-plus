@@ -23,15 +23,15 @@ public class MyInsertAll extends AbstractMethod {
         fieldSql.append(tableInfo.getKeyColumn()).append(",");
         StringBuilder valueSql = new StringBuilder();
         valueSql.append("#{").append(tableInfo.getKeyProperty()).append("},");
-        tableInfo.getFieldList().forEach(x->{
+        tableInfo.getFieldList().forEach(x -> {
             fieldSql.append(x.getColumn()).append(",");
             valueSql.append("#{").append(x.getProperty()).append("},");
         });
-        fieldSql.delete(fieldSql.length()-1, fieldSql.length());
+        fieldSql.delete(fieldSql.length() - 1, fieldSql.length());
         fieldSql.insert(0, "(");
         fieldSql.append(")");
         valueSql.insert(0, "(");
-        valueSql.delete(valueSql.length()-1, valueSql.length());
+        valueSql.delete(valueSql.length() - 1, valueSql.length());
         valueSql.append(")");
         SqlSource sqlSource = languageDriver.createSqlSource(configuration, String.format(sql, tableInfo.getTableName(), fieldSql.toString(), valueSql.toString()), modelClass);
         return this.addInsertMappedStatement(mapperClass, modelClass, "myInsertAll", sqlSource, new NoKeyGenerator(), null, null);

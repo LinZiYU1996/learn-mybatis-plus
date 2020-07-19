@@ -5,7 +5,7 @@ import com.lin.cruddemo.entity.User;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author Lin

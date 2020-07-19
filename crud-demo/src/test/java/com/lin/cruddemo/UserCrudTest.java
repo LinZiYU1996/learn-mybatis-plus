@@ -19,19 +19,19 @@ import org.springframework.util.DigestUtils;
 
 @SpringBootTest
 
-public class UserCrudTest
-{
+public class UserCrudTest {
 
     @Autowired
     private UserMapper userMapper;
+
     @Test
     public void test1() {
 
-        for (int i = 0; i < 100 ; i++) {
+        for (int i = 0; i < 100; i++) {
             String name = RandomStringUtils.randomAlphabetic(6);
             String pwd = RandomStringUtils.randomAlphabetic(10);
             String md5Pass = DigestUtils.md5DigestAsHex(pwd.getBytes());
-            User u = new User(name,md5Pass);
+            User u = new User(name, md5Pass);
             userMapper.insert(u);
         }
 

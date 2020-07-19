@@ -35,13 +35,6 @@ class OptimisticLockerApplicationTests {
     }
 
 
-
-
-
-
-
-
-
     /**
      * 批量更新带乐观锁
      * <p>
@@ -66,27 +59,6 @@ class OptimisticLockerApplicationTests {
         ew.eq("version", 2);
         Assert.assertEquals("All records with version=1 should be updated to version=2", count, userMapper.selectCount(ew).intValue());
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
